@@ -1,0 +1,17 @@
+# Local files and credentials must never be published.
+.DS_Store
+._*
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.sqlite*
+*.db
+credentials*
+secrets*
+node_modules/
+.cache/
+logs/

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mibo": {
+      "type": "http",
+      "url": "https://mibo.zhujunyue.com/mcp"
+    }
+  }
+}
