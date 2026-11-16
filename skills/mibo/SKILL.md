@@ -35,7 +35,7 @@ description: >
 | --- | --- |
 | 提取视频文案、口播逐字稿 | [视频文案提取](workflows/video-extract.md) |
 | 分析指定作品、分析为什么表现好 | [作品分析](workflows/video-analysis.md) |
-| 分析主页、诊断账号 | [对标账号分析](workflows/account-diagnosis.md) |
+| 分析主页、诊断账号 | [分析参考账号](workflows/account-diagnosis.md) |
 | 查看粉丝画像、受众需求 | [粉丝与受众分析](workflows/audience-analysis.md) |
 | 找热点、行业或同城作品、低粉爆款、研究选题 | [热点与作品研究](workflows/viral-content-research.md) |
 | 选题策划、口播脚本、文案改写、图文创作 | [内容创作](workflows/content-planning.md) |

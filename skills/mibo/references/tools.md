@@ -5,20 +5,30 @@
 | 任务 | 入口 |
 | --- | --- |
 | 提取视频原文 | `mibo_extract_copy` |
-| 分析账号主页 | `mibo_analyze_account` |
+| 分析参考账号 | `mibo_analyze_account` |
 | 全部采样准备完成后展示一次结果卡片 | `mibo_preview_results` |
 | 选择改写依据并改写 | `mibo_rewrite_copy` |
-| 查找热点与选题 | `mibo_find_topics`（当前连接器提供时），否则检索 01「机会雷达」 |
-| 定位其他技能 | `mibo_search_skills`、`mibo_get_skill`、`mibo_run_skill` |
+| 查找热点与选题 | `mibo_find_topics`（当前连接器提供时），否则检索 01「找热点与选题」 |
+| 查找功能 | `mibo_search_skills` |
+| 查看功能说明 | `mibo_get_skill` |
+| 使用功能 | `mibo_run_skill` |
 | 读取画像和资料 | `mibo_list_projects`、`mibo_list_items`、`mibo_get_item` |
 | 创建画像 | `mibo_create_project` |
-| 保存成果 | `mibo_save_artifact`、`mibo_complete_skill`、`mibo_complete_media_work` |
+| 保存成果 | `mibo_save_artifact` |
+| 保存功能结果 | `mibo_complete_skill` |
+| 保存音视频分析 | `mibo_complete_media_work` |
 | 读取或上传本次素材 | `mibo_get_asset`、`mibo_upload_asset` |
-| 读取或生成语音转写 | `mibo_get_transcript`、`mibo_transcribe` |
-| 查看进度或恢复原任务 | `mibo_get_task`、`mibo_control_workflow` |
-| 制作图文及处理媒体 | `mibo_render_document`、`mibo_media_operations`、`mibo_process_media` |
+| 查看语音文字 | `mibo_get_transcript` |
+| 保存语音文字 | `mibo_save_transcript` |
+| 语音转文字 | `mibo_transcribe` |
+| 查看任务进度 | `mibo_get_task` |
+| 停止或继续任务 | `mibo_control_workflow` |
+| 生成图片或文档 | `mibo_render_document` |
+| 查看音视频处理功能 | `mibo_media_operations` |
+| 处理音视频 | `mibo_process_media` |
 | 查看服务和积分 | `mibo_capabilities`、`mibo_credits` |
-| 视频生成报价及确认 | `mibo_video_quotes`、`mibo_confirm_video` |
+| 查看视频预计积分 | `mibo_video_quotes` |
+| 确认视频生成 | `mibo_confirm_video` |
 
 直接入口已经明确时直接调用；其他任务按用途搜索一次，只读取必要的公开输入和交付要求，不批量索取完整技能材料。
 

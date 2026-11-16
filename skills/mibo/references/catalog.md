@@ -8,24 +8,24 @@
 
 | 编号 | 功能 | 标识 | 用户提供或复用的输入 |
 | --- | --- | --- | --- |
-| 01 | 机会雷达与深度研究 | `opportunity-research` | 行业或观众问题、平台与研究范围 |
-| 02 | 算法规则追踪 | `skill-algorithm-updates` | 平台与需要核对的规则 |
-| 03 | 对标作品分析 | `skill-competitor-analysis` | 指定作品链接或素材、分析要求 |
-| 04 | 内容空白分析 | `skill-content-gap-analysis` | 行业、已有内容与研究范围 |
-| 07 | 行业情报 | `skill-news-intelligence` | 行业关键词与来源范围 |
+| 01 | 找热点与选题 | `opportunity-research` | 行业或观众问题、平台与研究范围 |
+| 02 | 查看平台规则 | `skill-algorithm-updates` | 平台与需要核对的规则 |
+| 03 | 分析参考作品 | `skill-competitor-analysis` | 指定作品链接或素材、分析要求 |
+| 04 | 寻找选题空白 | `skill-content-gap-analysis` | 行业、已有内容与研究范围 |
+| 07 | 查看行业动态 | `skill-news-intelligence` | 行业关键词与来源范围 |
 | 08 | RSS 订阅 | `skill-rss-aggregator` | 订阅源与本次操作 |
 
 ## 策划类
 
 | 编号 | 功能 | 标识 | 用户提供或复用的输入 |
 | --- | --- | --- | --- |
-| 11 | 对标账号分析 | `skill-account-diagnosis` | 账号主页链接、渠道与分析要求 |
-| 12 | 长文大纲 | `skill-article-outline` | 主题、读者与文章要求 |
-| 13 | 受众画像 | `skill-audience-profiler` | 账号主页、真实统计或评论样本 |
+| 11 | 分析参考账号 | `skill-account-diagnosis` | 账号主页链接、渠道与分析要求 |
+| 12 | 文章大纲 | `skill-article-outline` | 主题、读者与文章要求 |
+| 13 | 粉丝与受众分析 | `skill-audience-profiler` | 账号主页、真实统计或评论样本 |
 | 15 | 活动策划 | `skill-campaign-planner` | 活动目标、产品与约束 |
 | 16 | 轮播规划 | `skill-carousel-planner` | 主题、素材与轮播要求 |
 | 18 | 内容日历与排期 | `skill-content-calendar` | 内容计划、节点与排期要求 |
-| 19 | 选题矩阵 | `skill-content-matrix` | 画像、内容目标与范围 |
+| 19 | 批量生成选题 | `skill-content-matrix` | 画像、内容目标与范围 |
 | 20 | 内容策略 | `skill-content-strategy` | 画像、实际资源与内容目标 |
 | 21 | 开头钩子 | `skill-hook-generator` | 主题、原稿与开头要求 |
 | 22 | 直播方案 | `skill-livestream` | 直播主题、内容与时长要求 |
@@ -37,16 +37,16 @@
 | 编号 | 功能 | 标识 | 用户提供或复用的输入 |
 | --- | --- | --- | --- |
 | 27 | AI 生图 | `ai-image-gen` | 图片要求及可选参考素材 |
-| 28 | BGM / 音乐生成 | `ai-music` | 音乐要求及可选歌词 |
+| 28 | AI 生成音乐 | `ai-music` | 音乐要求及可选歌词 |
 | 29 | AI 视频生成 | `ai-video-gen` | 提示词、规格、参考素材及本次报价授权 |
 | 30 | 降噪 | `audio-denoise` | 音频素材与降噪要求 |
 | 31 | 音频剪辑 | `audio-editing` | 音频素材与剪辑要求 |
 | 33 | 音频可视化 | `audio-visualizer` | 音频素材及画面要求 |
 | 34 | 一句话出片 | `auto-short-video` | 出片要求、素材与目标规格 |
-| 35 | 自动字幕 | `auto-subtitle` | 音视频素材与字幕要求 |
+| 35 | 自动添加字幕 | `auto-subtitle` | 音视频素材与字幕要求 |
 | 36 | 卡点视频 | `beat-sync-video` | 素材、音乐与节奏要求 |
 | 39 | 图文卡片制作 | `card-xiaohongshu` | 文案、素材与卡片要求 |
-| 40 | 图表与信息图 | `chart-visualization` | 真实数据或结构化信息、表达要求 |
+| 40 | 制作图表与信息图 | `chart-visualization` | 真实数据或结构化信息、表达要求 |
 | 41 | 长片切片 | `clipify` | 长片素材与切片要求 |
 | 42 | 对比图 / 一图流 | `comparison-card` | 比较内容、证据与版式要求 |
 | 43 | 营销 / 带货文案 | `copywriting` | 产品事实、受众与文案要求 |
@@ -101,8 +101,8 @@
 | 97 | 产物管理 | `asset-manager` | 当前项目素材或成果、操作要求 |
 | 98 | 批量处理 | `batch-process` | 明确的一组素材与处理要求 |
 | 99 | 账号查询 | `skill-my-account` | 渠道与账号查询条件 |
-| 100 | 画像构建 | `skill-profile-builder` | 名称、渠道、主页链接及本次可选业务资料 |
-| 101 | 画像管理 | `skill-profile-manager` | 指定画像与查看或修改要求 |
+| 100 | 创建账号画像 | `skill-profile-builder` | 名称、渠道、主页链接及本次可选业务资料 |
+| 101 | 管理账号画像 | `skill-profile-manager` | 指定画像与查看或修改要求 |
 | 102 | 模板库 | `template-library` | 当前项目模板及管理要求 |
 
 ## 内部协作能力
@@ -111,7 +111,7 @@
 
 | 编号 | 能力 | 标识 | 配合任务 |
 | --- | --- | --- | --- |
-| 37 | 卡片视觉系统 | `card-design` | 关联图文任务的视觉要求 |
+| 37 | 图文样式设计 | `card-design` | 关联图文任务的视觉要求 |
 | 50 | 图像增强 | `image-enhance` | 关联图片任务的增强要求 |
 | 62 | 人设一致性 | `skill-persona-check` | 当前作品与选定画像 |
 | 63 | 交付检查 | `skill-publish-checklist` | 待交付内容与本次要求 |
