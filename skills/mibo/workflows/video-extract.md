@@ -4,7 +4,7 @@
 
 直接调用 `mibo_extract_copy`，使用用户给出的作品链接。明确指定了当前画像项目才带入项目；默认保存账号级提取记录，不自动创建或选择项目，不要求用户生成编号。
 
-返回原文就直接交付。任务仍在处理中时查询返回的原记录，沿用已有来源；不重复提交，不要求用户反复点击或查工具。文件语音转写由 Mibo 完成，不另找宿主转写工具。
+返回原文就直接交付。任务仍在处理中时查询返回的原记录，沿用已有来源；不重复提交，不要求用户反复点击或查工具。先复用已有完整原文。当前 Agent 具备能读取完整音轨、满足所需精度的真实转写工具，且能调用 mibo_finish_transcription 时，提交请求时填写 agent_asr_tool。其余情况由觅播转写。收到 agent_asr 后，用 mibo_get_asset 读取 audio_asset_id。处理完整音轨后，用 mibo_finish_transcription 回传 source_asset_id（填入 result.asset_id）、实际处理时长、工具名与完整原文。明确失败或不支持时回传 failed 或 unsupported；状态未知时只查询同一任务。
 
 区分作者发布配文和真实口播文字，不能用标题或简介替代逐字稿。缺少口播或真实时间时如实说明，不编造。单纯提取不询问改写依据、不自动改写。
 
@@ -12,7 +12,7 @@
 
 ## 完整转写交付
 
-`requested_delivery=complete_transcript` 表示本次请求完整口播，`result.text` 是服务端实际语音识别正文。`delivery_status=complete_transcript` 才表示转写完成；`partial_transcript` 只代表已取得部分，不能冒充全文。保留原话，较长时分段或提供实际可打开的完整 TXT 附件，不虚构下载链接。
+`requested_delivery=complete_transcript` 表示本次请求完整口播，`result.text` 是已取得的语音识别正文。`delivery_status=complete_transcript` 才表示转写完成；`partial_transcript` 只代表已取得部分，不能冒充全文。保留原话，较长时分段或提供实际可打开的完整 TXT 附件，不虚构下载链接。
 
 提取转写与公开发布用途不同。按实际内容、用户已说明的授权情况及宿主适用规则处理，不仅因来源是第三方平台就一律改成摘要。沿用用户在当前对话明确说明的授权，不重复要求声明，也不要求重新上传已经成功转写的文件。调用提取本身不证明版权归属，交付标记不替代宿主规则，不伪造授权或声称外链内容由用户上传。以上只供 Agent 执行，不放进交付正文。
 

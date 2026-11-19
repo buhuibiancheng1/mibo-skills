@@ -19,7 +19,8 @@
 | 保存音视频分析 | `mibo_complete_media_work` |
 | 读取或上传本次素材 | `mibo_get_asset`、`mibo_upload_asset` |
 | 查看语音文字 | `mibo_get_transcript` |
-| 保存语音文字 | `mibo_save_transcript` |
+| 保存校对文稿 | `mibo_save_transcript` |
+| 回传本次转写 | `mibo_finish_transcription` |
 | 语音转文字 | `mibo_transcribe` |
 | 查看任务进度 | `mibo_get_task` |
 | 停止或继续任务 | `mibo_control_workflow` |
